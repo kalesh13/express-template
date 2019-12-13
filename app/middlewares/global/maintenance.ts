@@ -1,4 +1,5 @@
 import { RequestHandler } from "express";
+import config from "../../../config";
 
 // Middleware to check whether the application has
 // gone to maintenance mode or not.
@@ -7,7 +8,7 @@ import { RequestHandler } from "express";
 // maintenance mode is set
 const maintenanceMiddleware: RequestHandler = function (req, res, next) {
 
-    if (process.env.APP_MAINTENANCE) {
+    if (config.maintenance) {
         return res.status(503).send({
             message: "We are undergoing a scheduled maintenance. Please try again later."
         });
