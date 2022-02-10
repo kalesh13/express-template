@@ -51,7 +51,7 @@
     "jest": "^24.9.0",
     "jquery": "^3.4.1",
     "laravel-mix": "^3.0.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "ts-jest": "^24.1.0",
     "vue": "^2.6.10",
     "vue-router": "^3.1.3",
